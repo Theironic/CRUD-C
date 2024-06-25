@@ -25,6 +25,7 @@ void addproduto(itens produtos[],int *contar){
 // listar produtos
 void mostrar(int id, itens produtos[]){
     printf("ID DO PRODUTO: %d, NOME DO PRODUTO: %s, PRECO DO PRODUTO: %f",produtos[id].id,produtos[id].nome,produtos[id].price);
+    printf("\n");
 }
 //deletar
 void deletar(itens produtos[],int *contar){
@@ -75,7 +76,7 @@ int main(){
         printf("1 - para cadastrar \n");
         printf("2 - para monstrar produtos cadastrados \n");
         printf("3 - para deletar produto \n");
-        printf("4 - para atualizar produto \n digite qualquer outro numero para sair");
+        printf("4 - para atualizar produto \n digite qualquer outro numero para sair \n");
         scanf("%d", &choice);
         
         if(choice == 1){
